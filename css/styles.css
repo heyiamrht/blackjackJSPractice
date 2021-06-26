@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0c0c0c;
+  min-height: 100vh;
+}
+
+.fade-in {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name {
+  color: yellow;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.bj {
+  width: 30%;
+  background: #111111;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bj__title {
+  padding: 2rem;
+  border-bottom: 1px solid #191919;
+  text-align: center;
+}
+
+.bj__title-text {
+  font-size: 1.75rem;
+}
+
+.bj__figures {
+  padding: 2rem 1.5rem 2rem;
+}
+
+.bj__figure-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.bj__figure-main {
+  font-weight: 400;
+}
+
+.bj__message {
+  text-align: center;
+  display: none;
+  margin: -1rem 0 2rem;
+}
+
+.bj__start-btn {
+  background-color: yellow;
+  color: black;
+}
+
+.bj__draw-btn {
+  display: none;
+  background-color: #191919;
+  color: white;
+}
+
+.display {
+  display: block;
+}
+
+.display-ib {
+  display: inline-block;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  height: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  font-size: 0.95rem;
+}
